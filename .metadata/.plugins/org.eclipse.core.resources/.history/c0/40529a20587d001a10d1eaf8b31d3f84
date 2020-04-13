@@ -1,0 +1,25 @@
+package com.test2;
+
+class A {
+	void aMethod() {System.out.println("a Method");}
+}
+class B extends A{
+	void bMethod() {System.out.println("b Method");}
+	void aMethod() {System.out.println("b Method on B class");}
+}
+class C extends B{
+	void cMethod() {System.out.println("c Method");}
+	void bMethod() {System.out.println("c Method of b class");}
+	void aMethod() {System.out.println("c Method of a class");}
+}
+
+public class Test1 {
+	static void goMethod(A a) {
+		a.aMethod();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

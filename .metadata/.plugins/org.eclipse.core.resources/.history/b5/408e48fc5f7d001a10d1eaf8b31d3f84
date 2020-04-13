@@ -1,0 +1,16 @@
+package com.test2;
+
+interface Cake{
+	public void showCakeSize();
+	
+
+class CheeseCake implements Cake{
+	
+}
+
+	
+public class Test3 {
+	public static void main(String[] args) {
+		
+	}
+}

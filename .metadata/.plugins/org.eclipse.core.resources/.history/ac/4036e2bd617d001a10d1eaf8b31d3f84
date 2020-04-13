@@ -1,0 +1,22 @@
+package com.test2;
+
+class Data{
+	void open() {
+		System.out.println("Data open");
+	}
+}
+class Excel extends Data {
+	void open() {System.out.println("Excel open");}
+}
+
+public class Test4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Excel e = new Excel();
+		e.open();
+		
+		Data d =e;
+	}
+
+}
