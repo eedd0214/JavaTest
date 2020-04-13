@@ -1,0 +1,28 @@
+class Student3{
+	public Student3() {
+		System.out.println("Default Constructor");//호출 확인용
+		name="홍길동";
+		age=20;
+	}
+	private String name;//안에서만 사용할수있게 제약시킴
+	private int age;
+	public void setName(String nm) {//얘는 공용으로 사용가능
+		name= nm;
+	}
+	public void setAge(int ag) {
+		age=ag;
+	}
+	public void gotoSchool() {
+		System.out.println(name+","+age+"가 학교에 가다.");
+		
+	}
+}
+public class Test4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student3 st1 = new Student3();
+		st1.gotoSchool();
+	}
+
+}

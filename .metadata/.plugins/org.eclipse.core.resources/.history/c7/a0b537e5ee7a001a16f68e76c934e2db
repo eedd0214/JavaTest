@@ -1,0 +1,11 @@
+
+public class Animal {
+	public void breath() {
+		System.out.println("Animal Breath");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

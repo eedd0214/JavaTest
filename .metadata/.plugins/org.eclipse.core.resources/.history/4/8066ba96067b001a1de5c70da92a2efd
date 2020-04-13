@@ -1,0 +1,14 @@
+
+public class DbExecutor {
+
+	public static void main(String[] args) {
+		
+		//Database db = CreateDatebase("Mysql");
+		//db.open();
+		Mysql s =new Mysql();
+		
+		//Database db2 = CreateDatebase("Oracle");
+		//db2.open();
+	}
+
+}

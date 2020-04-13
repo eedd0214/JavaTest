@@ -1,0 +1,31 @@
+
+public class Test9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Dog d = new Dog();
+		d.Bark();
+		Animal a =d;//타입만 바뀐다.
+		a.breath();
+		//a.brak();
+		Dog d1 = (Dog)a;
+		d1.Bark();
+		
+		Animal a1 = new Dog();//타입은 애니멀 객체는 도그
+		Animal a2 = new Cat();
+		a1.breath();
+		
+		/*
+		 * 상위에서 만든 클래스는 하위로 못감
+		 * 하위에서 만든 클래스는 상위로감
+		 * 하위에 있는 클래스들간 이동이 불가
+		 * 
+		 */
+		
+		
+	}
+
+		static void Test(Dog d) {}
+		static void Test2(Cat d) {}
+		static void Test4(Animal d) {}
+}

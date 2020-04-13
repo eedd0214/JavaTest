@@ -1,0 +1,30 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Test9 {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+//		boolean choice = true;
+//		if(choice == true) {
+//			System.out.println("O.K");
+//		}else {
+//			System.out.println("Cancel");
+//		}
+//		int x= 10;
+//		if(x<20) {
+//			System.out.println("x < 20");
+//		}
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("name : ");
+		String name = scan.nextLine();
+		
+		if(name=="±Ç¼øºó") {
+			System.out.println("±Ç¼øºóÀÔ´Ï´Ù.");
+		}else {
+			System.out.println("±Ç¼øºóÀÌ ¾Æ´Õ´Ï´Ù.");
+		}
+	}
+
+}

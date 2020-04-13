@@ -1,0 +1,18 @@
+package com.test;
+class {
+	String bread;
+	int age;
+	String color;
+	void barking() {}
+	void hungry() {}
+	void sleeping() {}
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

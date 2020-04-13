@@ -1,0 +1,12 @@
+
+public class Tset15 {
+	void test() {
+		
+	}
+	static void test2() {
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+}

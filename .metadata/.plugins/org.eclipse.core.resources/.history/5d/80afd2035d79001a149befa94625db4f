@@ -1,0 +1,37 @@
+
+public class UseVariable {
+	public static void main(String[] args) {
+		int num1;
+		num1 = 10;
+		
+		int num2;
+		num2 = 20;
+		int num3 = num1+num2;
+		int num4 = num1-num2;
+		System.out.println(num1+"+"+num2+"="+num3);
+		System.out.println(num1+"-"+num2+"="+num4);
+		int num5 = 0;
+		for(int j = 0;j<10;j++) {
+			num5 = num1+num5;
+			System.out.println(num5);
+		}
+		int a=0;
+		int b=2;
+		for(int i=0;i<10;i++) {
+			if(a<b) {
+				System.out.println("b가 a보다 큽니다.");
+				a++;
+			}else if(a>b){
+				System.out.println("a가 b보다 큽니다.");
+				b++;
+			}else {
+				System.out.println("a와 b가 같습니다..");
+				a++;
+				b--;
+			}
+		}
+		String test = "안녕하세요";
+		String test2 = "안녕하세요";
+		
+	}
+}

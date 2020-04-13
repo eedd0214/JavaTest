@@ -1,0 +1,12 @@
+
+public class Test9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean choice = true;
+		if(choice == true) {
+			System.out.println("O.K");
+		}
+	}
+
+}

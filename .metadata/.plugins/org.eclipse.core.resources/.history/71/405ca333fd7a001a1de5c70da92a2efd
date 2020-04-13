@@ -1,0 +1,12 @@
+package com.Animal;
+import com.zoo.*;
+
+public class Dog {
+	public void makeCat() {
+		com.zoo.Cat yaong = new com.zoo.Cat();
+		
+	}
+	public void makeDuck() {
+		com.zoo.Duck quack = new com.zoo.Duck();
+	}
+}

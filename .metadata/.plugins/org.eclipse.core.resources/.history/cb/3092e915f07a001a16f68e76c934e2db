@@ -1,0 +1,16 @@
+
+public class Test8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Animal a = new Animal();
+		a.breath();
+		Dog d = new Dog();
+		d.breath();
+		d.Bark();
+		
+		Cat c = new Cat();
+		c.Meow();
+	}
+
+}

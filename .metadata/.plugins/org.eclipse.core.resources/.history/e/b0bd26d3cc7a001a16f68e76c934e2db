@@ -1,0 +1,59 @@
+/*
+ * Class, Object(Instance)
+ * 클래스 소스 청사진
+ * 오브젝트 메모리 
+ * 객체지향
+ * 데이터 : 프로그램상 유지하고 관리해야 할 데이터
+ * 기능 : 데이터를 조작하는 기능 청사진 특성등을 저장할수있는 껍데기를 정의
+ * 
+ * 학생을 정의해보자
+ * 학생의 항목
+ *  -이름, 나이, 키 등등...
+ *  -공부하다, 등교하다, 하교하다
+ *  >>>>>구체적인 클래스를 만들 수 있다.
+ *  구체화된 틀을 만드는 것!
+ *  붕어빵 틀!
+ *  
+ *  
+ * 
+ */
+
+class Student1{
+	String name;
+	int age;
+	int height;
+	
+	void study() {
+		System.out.println(name+", ("+age+"세,"+height+"cm) 이(가) 공부한다.");
+	}
+	void goSchool() {
+		
+	}
+	void goHome() {
+	
+	}	
+}
+class School{
+	String location;
+	int qty;
+	void teaching() {
+		System.out.println(location+"에서 ");
+	}
+}
+
+public class Test14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student1 stu1=new Student1();
+		Student1 stu2=new Student1();
+		School s = new School();
+		s.location = "서울";
+		s.teaching();
+		stu1.name="이순신";
+		stu1.age=20;
+		stu1.height=180;
+		stu1.study();
+	}
+
+}

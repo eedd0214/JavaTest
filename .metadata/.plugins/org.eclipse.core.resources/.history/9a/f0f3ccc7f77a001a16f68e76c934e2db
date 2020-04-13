@@ -1,0 +1,17 @@
+
+public class Test9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Animal a =new Animal();
+		Dog d = new Dog();
+		Animal a1 =d;//타입을 애니멀로 바꿈 작은(하위)타입에서 큰(상위)타입으로
+		//a1.bark();//상위로 올라가 버려서 바크를 이용못함
+		a1.breath();//애니멀에 있는 브래스는 사용가능
+		
+
+		Dog d1 =(Dog)a1;
+		d1.Bark();
+	}
+
+}

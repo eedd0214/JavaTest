@@ -1,0 +1,22 @@
+class Employee{
+	String name;
+	int age;
+	void gotoWork() {
+		System.out.println("이름은 "+name+"이고, 나이는 "+age+"인 사람이 일을 한다.");
+	}
+}
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		value-type(값타입) vs reference-type(참조타입)
+		int a = 1;
+		int b= a;
+		Employee c= new Employee();
+		c.name = "홍길동";
+		c.age = 45;
+		c.gotoWork();
+	}
+
+}

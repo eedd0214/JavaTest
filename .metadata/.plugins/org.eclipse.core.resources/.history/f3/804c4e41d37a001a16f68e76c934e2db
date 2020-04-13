@@ -1,0 +1,29 @@
+
+class Student2{
+	private String name;//뒤에 둬도 상관없다. 클래스안에 맴버변수는 상관없다.
+	public void setName(String nm) {
+		name= nm;
+	}
+	public String getName() {
+		return name;
+	}
+	public void gotoSchool() {
+		System.out.println(name+"이 학교에 간다.");
+	}
+}
+
+
+public class Tset15 {
+	public static void main(String[] args) {
+		Student2 stu1 =new Student2();
+//		stu1.name="이순신";
+		stu1.setName("이순신");
+		stu1.gotoSchool();
+		Student2 stu2;
+		stu2= new Student2();
+//		stu2.name="강감찬";
+		stu1.setName("강감찬");
+		stu2.gotoSchool();
+		
+	}
+}

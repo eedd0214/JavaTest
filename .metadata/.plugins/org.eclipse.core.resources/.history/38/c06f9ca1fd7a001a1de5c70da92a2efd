@@ -1,0 +1,22 @@
+
+public class Test10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Dog d = new Dog();
+		d.Bark();
+		d.breath();
+		
+		
+		Cat c = new Cat();
+		c.breath();
+		c.Meow();
+		
+		Animal a1=d;//도그 객체, 타입은 에니멀
+		a1.breath();//
+		Animal a2=c;//캣 객체, 타입은 애니멀
+		a2.breath();
+
+	}
+
+}

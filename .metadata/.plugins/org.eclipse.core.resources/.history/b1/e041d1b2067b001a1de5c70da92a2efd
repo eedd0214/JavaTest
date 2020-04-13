@@ -1,0 +1,25 @@
+
+public class DbExecutor {
+	static Database CreateDatabase(String dbname) {
+		Database db =null;
+		switch(dbname) {
+		case "Mysql":
+			db = new Mysql();
+			break;
+		case "Oracle":
+			db = new Oracle();
+			break;
+		}
+		return db;
+	}
+	public static void main(String[] args) {
+		
+		//Database db = CreateDatebase("Mysql");
+		//db.open();
+		Mysql s =new Mysql();
+		
+		//Database db2 = CreateDatebase("Oracle");
+		//db2.open();
+	}
+
+}

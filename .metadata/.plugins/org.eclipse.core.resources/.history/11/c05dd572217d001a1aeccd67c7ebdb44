@@ -1,0 +1,29 @@
+package com.test;
+class Dog {
+	public Dog() {
+		age = 1;
+		color = "Black";//객체가 초기화할때 쓰는 것
+		System.out.println("Default Constructor Dog");
+	}
+	public Dog(int ag, String clr) {
+		age = ag;
+		color = clr;
+		
+	}
+	String bread;
+	int age;
+	String color;
+	void barking() {}
+	void hungry() {}
+	void sleeping() {}
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Dog d= new Dog();
+
+	}
+
+}

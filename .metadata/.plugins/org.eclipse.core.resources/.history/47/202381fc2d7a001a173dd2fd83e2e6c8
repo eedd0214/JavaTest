@@ -1,0 +1,47 @@
+//method, function, procedure
+//메소드, 함수, 프로시져
+class myClass{
+	int add(int x,int y) {
+		int z =x +y;
+		return z;
+	}
+}
+
+
+public class Test10 {//함수를 만드는 것 스태틱? 클래스 안에서 바로 써야하기때문에 붙인다.
+	static int add(int x,int y) {
+		int z =x +y;
+		return z;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=1;
+		int b=2;
+		int c= a+b;//출력이 하나
+		
+		int d= add(a,b);
+		System.out.println(d);
+		System.out.println(add(2,3));
+		
+		int a1= 2;
+		int b1= 3;
+		int c1= a1+b1;//출력이 둘
+		
+		//하ㅓ나하나 쓰기 귀찮기 때문에 함수 생성
+		
+		System.out.println(add(a,b)+add(a1,b1));
+		
+		
+		//스태틱이 없다면 클래스를 만들어서 써야한다
+		
+		myClass my = new myClass();
+		int cla = my.add(1, 2);
+		System.out.println(cla);
+		
+		
+		
+		
+		
+	}
+
+}

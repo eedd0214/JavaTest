@@ -1,0 +1,32 @@
+
+public class Test9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Animal a =new Animal();
+		Dog d = new Dog();
+		Animal a1 =d;//타입을 애니멀로 바꿈 작은(하위)타입에서 큰(상위)타입으로
+		//a1.bark();//상위로 올라가 버려서 바크를 이용못함
+		a1.breath();//애니멀에 있는 브래스는 사용가능
+		//Dog d1= (Dog)a;
+		//d1.Bark();
+		//d1.Bark();
+	
+		
+		/*
+		 * 상위에서 만든 클래스는 하위로 못감
+		 * 하위에서 만든 클래스는 상위로감
+		 * 하위에 있는 클래스들간 이동이 불가
+		 * 
+		 */
+		Cat c = new Cat();
+		Animal a2 = c;
+		//Dog d2 = (Dog)a2;
+		
+		
+	}
+
+		static void Test(Dog d) {}
+		static void Test2(Cat d) {}
+		static void Test4(Animal d) {}
+}
