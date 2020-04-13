@@ -1,0 +1,28 @@
+package com.test;
+class Calculator {//Calculator의 로컬변수 a,b
+	int add(int a, int b) {
+		int result = a + b;
+		return result;
+	}
+	int add(int a, int b, int c) {
+		int result = a+b+c;
+		return result;
+	}
+	int subtract(int a, int b) {
+		int result = a-b;
+		return result;
+	}
+	//위아래 변수는 서로 아무 관계가 없다.
+}
+public class Test3 {//Test3의 로컬변수 a,b
+	public static void main(String[] args) {
+		Calculator calc = new Calculator();
+		int a = 1;
+		int b =2;
+		int result = calc.add(a, b);
+		int result2 = calc.subtract(a, b);
+		System.out.println(result);
+		System.out.println(result2);
+		
+	}
+}

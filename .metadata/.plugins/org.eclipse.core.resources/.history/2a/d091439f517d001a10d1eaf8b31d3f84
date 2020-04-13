@@ -1,0 +1,38 @@
+package com.test;
+
+
+class A1{
+	void aMethod() {
+		System.out.println("aMethod");
+	}
+}
+class B1 extends A1{
+	void bMethod() {
+		System.out.println("bMethod");
+	}
+		
+}
+
+class C extends A1{
+	void cMethod() {
+		System.out.println("cMethod");
+	}
+}
+public class Test12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B1 b =new B1();
+		b.aMethod();
+		b.bMethod();
+		A1 a= b;
+		
+		a.aMethod();
+		B1 b1 = (B1)a;
+		
+		
+		A1 a1 = new B1();
+		
+	}
+
+}

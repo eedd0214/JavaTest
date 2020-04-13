@@ -13,8 +13,13 @@ class Dog {
 	String bread;
 	int age;
 	String color;
-	void barking() {}
-	void hungry() {}
+	void barking() {}//값이 반환되지 않는 타입
+	int hungry() {
+		int a =1;
+		int b =2;
+		int c =a+b;
+		return c;//값이 반환되는 타입
+	}
 	void sleeping() {}
 	
 }
@@ -24,7 +29,9 @@ public class Test {
 		// TODO Auto-generated method stub
 		Dog d= new Dog();
 		Dog d2 = new Dog(2, "땡칠이");
-		
+		int s =d.hungry();
+		int s2 = d2.hungry();
+		System.out.println(s);
 
 	}
 

@@ -1,0 +1,26 @@
+package com.test;
+class Student4 {
+	private String name ;
+	public Student4(String name) {
+		this.name =name;
+		System.out.println(name);
+	}
+}
+class MiddleStudent4 extends Student4{
+	int age;
+	public MiddleStudent4(String name, int age) {
+		super(name);
+		//this.name= name;
+		this.age=age;
+		System.out.println(name+", "+age);
+	}
+}
+public class Test7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MiddleStudent4 mid = new MiddleStudent4("ȫ�浿", 47);
+		
+	}
+
+}

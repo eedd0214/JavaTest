@@ -1,0 +1,36 @@
+package com.test;
+
+class MyClass{
+	static int count;
+	public MyClass() {
+		count++;
+		System.out.println(count);
+	}
+}
+class MyClass2{
+	static int count;//static 있고 없고 차이 : 인스턴스를 공유하기 때문에 숫자가 올라간다.
+	//한번 선언하고 계속 쓰고싶을떄 사용한다.
+	public MyClass2() {
+		count++;
+		System.out.println(count);
+	}
+}
+
+public class Test8 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyClass m1 =new MyClass();
+		MyClass m2 =new MyClass();
+		MyClass m3 =new MyClass();
+		System.out.println("\n");
+		MyClass2 c1 = new MyClass2();
+		MyClass2 c2 = new MyClass2();
+		MyClass2 c3 = new MyClass2();
+		
+		
+		MyClass.count =100;
+		
+	}
+
+}

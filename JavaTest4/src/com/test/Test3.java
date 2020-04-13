@@ -1,0 +1,36 @@
+package com.test;
+class Calculator {//Calculator의 로컬변수 a,b
+	int result;
+	public Calculator() {//생성자
+		result = 0;//초기화하고 싶을때 정의하는것!
+	}
+	public Calculator(int r) {
+		result = r;
+	}
+	int add(int a, int b) {
+		result = a + b;
+		return result;
+	}
+	int add(int a, int b, int c) {
+		result = a+b+c;
+		return result;
+	}//메소드의 오버로딩!
+	int subtract(int a, int b) {
+		result = a-b;
+		return result;
+	}
+	//위아래 변수는 서로 아무 관계가 없다.
+}
+public class Test3 {//Test3의 로컬변수 a,b
+	public static void main(String[] args) {
+		//Calculator calc = new Calculator();
+		Calculator calc = new Calculator(100);
+		int a = 1;
+		int b =2;
+		int result = calc.add(a, b);
+		int result2 = calc.subtract(a, b);
+		System.out.println(result);
+		System.out.println(result2);
+		
+	}
+}

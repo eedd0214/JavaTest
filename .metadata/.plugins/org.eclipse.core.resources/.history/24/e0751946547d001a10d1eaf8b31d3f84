@@ -1,0 +1,20 @@
+
+public class Overriding {
+
+class A {
+	void aM(){
+		System.out.println("A 메소드");
+	}
+}
+class B extends A{
+	void bM(){
+		System.out.println("b 메소드");
+	}
+}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

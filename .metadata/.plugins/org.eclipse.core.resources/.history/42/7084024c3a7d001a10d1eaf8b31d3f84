@@ -1,0 +1,32 @@
+package com.test;
+
+class MyClass{
+	int count;
+	public MyClass() {
+		count++;
+		System.out.println(count);
+	}
+}
+class MyClass2{
+	int count;
+	public MyClass2() {
+		count++;
+		System.out.println(count);
+	}
+}
+
+public class Test8 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyClass m1 =new MyClass();
+		MyClass m2 =new MyClass();
+		MyClass m3 =new MyClass();
+
+		MyClass2 c1 = new MyClass2();
+		MyClass2 c2 = new MyClass2();
+		MyClass2 c3 = new MyClass2();
+		
+	}
+
+}

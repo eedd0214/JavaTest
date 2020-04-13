@@ -1,0 +1,18 @@
+package com.test;
+
+class Student2 {
+	private String name;
+	public void setName(String name) {
+		name = nm;
+	}
+
+}
+
+public class Test5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
